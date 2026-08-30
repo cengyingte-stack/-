@@ -1,5 +1,4 @@
 # WeChatLiveCaption
-
 Windows 微信视频/语音通话实时中文字幕工具。
 
 本项目通过 **VB-CABLE + PyAudioWPatch + FunASR + PySide6** 实现：将微信声音单独路由到 VB-CABLE，程序只监听该虚拟音频通道，再使用 FunASR 的中文流式识别模型生成字幕，并以悬浮窗口显示在屏幕上。
@@ -84,8 +83,6 @@ Windows 系统音 ─→ Realtek/耳机
 
 ## 4. 项目文件介绍
 
-建议 Git 项目目录：
-
 ```text
 WeChatLiveCaption/
 │
@@ -113,18 +110,6 @@ WeChatLiveCaption/
 8. 过滤低能量/静音数据；
 9. 将识别结果发送给字幕窗口；
 10. 使用 PySide6 显示置顶中文字幕。
-
-如果当前文件名为：
-
-```text
-app_vbcable.py
-```
-
-建议上传 Git 前改名为：
-
-```text
-app.py
-```
 
 ### `requirements.txt`
 
